@@ -18,14 +18,9 @@
     margin-right: auto;
   }
 
-  #navbar a {
-    display: inline-block;
-    padding-left: 15px;
-    color: #000;
-    opacity: 0.75;
-  }
-
   #navbar {
+    display: flex;
+    align-items: flex-start;
     position: relative;
     margin-top: 20px;
   }
@@ -33,14 +28,17 @@
   .center-horizontal {
     display: grid;
     align-content: center;
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   .border {
-    border: 20px solid black;
+    border: 5px solid black;
   }
 
   a {
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -51,13 +49,52 @@
   a:hover {
     text-decoration: underline;
   }
+
+  #header-right {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1050px;
+  }
+
+  #google-apps-icon {
+    position: relative;
+    display: block;
+    align-self: top;
+    bottom: 5px;
+    left: 10px;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  #sign-in-btn {
+    display: block;
+    color: white;
+    margin-left: 10px;
+    background-color: rgb(66, 133, 244);
+    border-radius: 2px;
+    padding: 7px 13px 7px 13px;
+    position: relative;
+    bottom: 5px;
+  }
 </style>
 
 <html>
   <body>
     <div id="navbar">
-      <a href="">About</a>
-      <a href="">Store</a>
+      <div id="header-left">
+        <a href="">About</a>
+        <a href="">Store</a>
+      </div>
+      <div id="header-right">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img
+          id="google-apps-icon"
+          src="https://img.icons8.com/material-sharp/24/000000/squared-menu.png"
+        />
+        <a id="sign-in-btn" href="#">Sign in</a>
+      </div>
     </div>
     <div class="center-horizontal">
       <img id="google-logo" src="needed-images/google3.png" alt="Google Logo" />
@@ -66,4 +103,6 @@
   </body>
 </html>
 
-<!-- Next do the navbar across the top, first building the content and then trying to position it. -->
+<!-- Finally, put in the footer, which should be very similar to the top navbar. -->
+<!-- Finish the search-bar: add maginfying glass. -->
+<!-- Add 'Google Search button' and "I'm Feeling Lucy" button. -->
