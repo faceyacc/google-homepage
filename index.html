@@ -8,7 +8,12 @@
     height: 44px;
     border-radius: 24px;
     margin: 10px auto;
-    width: 482px;
+    width: 582px;
+  }
+
+  #search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
   }
 
   #google-logo {
@@ -77,6 +82,58 @@
     position: relative;
     bottom: 5px;
   }
+
+  #inner-sb {
+    display: flex;
+    padding: 5px 8px 0px 14px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+
+  #magnifying-itm {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    /* border: 1px solid red; */
+  }
+  .hsuHu {
+    margin: auto;
+  }
+  .hsuWu {
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+    color: #9aa0a6;
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+    fill: currentColor;
+  }
+
+  #sb-input {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  #text-input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    outline: none;
+    margin-top: -37px;
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+    line-height: 34px;
+    height: 34px !important;
+    position: relative;
+    bottom: -35px;
+  }
 </style>
 
 <html>
@@ -98,11 +155,29 @@
     </div>
     <div class="center-horizontal">
       <img id="google-logo" src="needed-images/google3.png" alt="Google Logo" />
-      <div id="search-bar"></div>
+      <div id="search-bar">
+        <div id="inner-sb">
+          <div id="magnifying-itm">
+            <div class="hsuHu">
+              <span class="hsuWu">
+                <svg focusable="false" viewbox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 
+                    4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div id="sb-input">
+            <input id="text-input" type="text" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
 
-<!-- Finally, put in the footer, which should be very similar to the top navbar. -->
 <!-- Finish the search-bar: add maginfying glass. -->
 <!-- Add 'Google Search button' and "I'm Feeling Lucy" button. -->
+<!-- Add footer to page -->
