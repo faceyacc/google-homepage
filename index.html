@@ -76,11 +76,12 @@
     display: block;
     color: white;
     margin-left: 10px;
-    background-color: rgb(66, 133, 244);
+    /* background-color: rgb(66, 133, 244); */
     border-radius: 2px;
     padding: 7px 13px 7px 13px;
     position: relative;
     bottom: 5px;
+    background: -moz-linear-gradient(top, #4387fd, #4683ea);
   }
 
   #inner-sb {
@@ -134,6 +135,88 @@
     position: relative;
     bottom: -35px;
   }
+
+  #btns-containers {
+    width: 571px;
+    height: 70px;
+    padding-top: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #center-btns {
+    font-size: small;
+    font-family: arial, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-feel {
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    /* margin: 11px 4px; */
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 7px;
+  }
+
+  .btn-feel:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+  }
+
+  footer {
+    display: block;
+    bottom: 0;
+    font-size: 10pt;
+    height: 35px;
+    position: fixed;
+    border: 1px solid slateblue;
+    z-index: 104;
+    width: 100%;
+    min-width: 1139px;
+    margin: 0 auto;
+    color: #222;
+    font-family: arial, sans-serif;
+  }
+
+  #fbar {
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* position: relative; */
+  }
+
+  #foot-right {
+    /* border: 1px solid seagreen; */
+    margin-right: 30px;
+    float: right;
+  }
+
+  #foot-left {
+    /* border: 1px solid salmon; */
+    float: left;
+  }
 </style>
 
 <html>
@@ -174,10 +257,29 @@
           </div>
         </div>
       </div>
+
+      <div id="btns-containers">
+        <div id="center-btns">
+          <button class="btn-feel">Google Search</button>
+          <button class="btn-feel">I'm Feeling Lucky</button>
+        </div>
+      </div>
     </div>
+    <footer id="fbar">
+      <span id="foot-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+      </span>
+      <span id="foot-left">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search works</a>
+      </span>
+    </footer>
   </body>
 </html>
 
-<!-- Finish the search-bar: add maginfying glass. -->
-<!-- Add 'Google Search button' and "I'm Feeling Lucy" button. -->
+<!-- Add <form> tag on all of class="center-horizontal" -->
+<!-- Make web page responsive. -->
 <!-- Add footer to page -->
