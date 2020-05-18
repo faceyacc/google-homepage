@@ -56,9 +56,24 @@
   }
 
   #header-right {
+    /* border: 1px solid chartreuse; */
     display: flex;
     align-self: flex-start;
-    margin-left: 1050px;
+    position: relative;
+    left: 1050px;
+    bottom: 5px;
+  }
+
+  #header-right a {
+    /* border: 1px solid red; */
+    margin: 4px;
+  }
+
+  #header-right img {
+    margin-top: 10px;
+    margin-right: 25px;
+    position: relative;
+    bottom: 8px;
   }
 
   #google-apps-icon {
@@ -81,6 +96,7 @@
     padding: 7px 13px 7px 13px;
     position: relative;
     bottom: 5px;
+    /* left: 40px; */
     background: -moz-linear-gradient(top, #4387fd, #4683ea);
   }
 
@@ -209,13 +225,43 @@
 
   #foot-right {
     /* border: 1px solid seagreen; */
-    margin-right: 30px;
+    /* font-size: 14px; */
+    margin-right: 45px;
     float: right;
+    white-space: nowrap;
+    line-height: 40px;
+    color: #222;
+  }
+
+  #foot-right a {
+    /* border: 1px solid seagreen; */
+    font-size: 14px;
+    /* margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+    white-space: nowrap;
+    line-height: 40px; */
+    color: #222;
+    position: relative;
+    right: 10px;
+    bottom: 3px;
+    margin: 5px;
   }
 
   #foot-left {
     /* border: 1px solid salmon; */
     float: left;
+    margin-left: 25px;
+  }
+
+  #foot-left a {
+    /* border: 1px solid seagreen; */
+    font-size: 14px;
+    color: #222;
+    position: relative;
+    right: 10px;
+    bottom: 3px;
+    margin: 5px;
   }
 </style>
 
@@ -282,4 +328,3 @@
 
 <!-- Add <form> tag on all of class="center-horizontal" -->
 <!-- Make web page responsive. -->
-<!-- Add footer to page -->
