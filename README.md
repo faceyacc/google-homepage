@@ -1,4 +1,7 @@
-# google-homepage
+# Google-homepage Recreation
 
-Simple recreation of Google's homepage to learn HTML and CSS.
-Testing
+Simple recreation of Google's homepage to learn HTML and CSS priciples.
+
+
+## Video Demo
+![](google_homepage.gif)
